@@ -11,3 +11,6 @@ developed.
 program flow.
 * Do not couple domain classes with the user interface (e.g., do not generate screen 
 outputs in domain logic classes).
+
+> [!NOTE]  
+> You can create an executable `jar` with `mvn package`. It will be located in `Testing-P2>Application>target>Application-0.0.1-SNAPSHOT-jar-with-dependencies.jar` and you can execute it in your terminal with `java -jar Application-0.0.1-SNAPSHOT-jar-with-dependencies.jar`
