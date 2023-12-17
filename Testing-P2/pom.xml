@@ -62,7 +62,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.7.9</version>
+				<version>0.8.4</version>
 				<executions>
 					<execution>
 						<id>default-prepare-agent</id>
@@ -116,7 +116,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-		
+
 	</build>
 	<reporting>
 		<plugins>
@@ -153,4 +153,12 @@
 		<module>UserInterface</module>
 		<module>Application</module>
 	</modules>
+	<!-- Distribution Management-->
+	<distributionManagement>
+		<site>
+			<id>internal.repo</id>
+			<name>Temporary Staging Repository</name>
+			<url>file://${project.build.directory}/mvn-repo</url>
+		</site>
+	</distributionManagement>
 </project>
