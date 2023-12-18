@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Complex.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">QuadraticEq</a> &gt; <a href="index.source.html" class="el_package">domain</a> &gt; <span class="el_source">Complex.java</span></div><h1>Complex.java</h1><pre class="source lang-java linenums">package domain;
+
+/**
+ * &lt;p&gt;
+ * &lt;b&gt;Class:&lt;/b&gt;&lt;/br&gt;
+ * Complex.
+ * &lt;/p&gt;
+ * 
+ * &lt;p&gt;
+ * &lt;b&gt;Description:&lt;/b&gt;&lt;/br&gt;
+ * The {@code Complex} class represents a complex number with real and imaginary
+ * parts. It provides methods to set and get the real and imaginary parts, and a
+ * method to generate a string representation of the complex number.
+ * &lt;/p&gt;
+ * 
+ * &lt;p&gt;
+ * &lt;b&gt;Control change:&lt;/b&gt;&lt;/br&gt;
+ * &lt;ul&gt;
+ * &lt;li&gt;&lt;b&gt;0.1.0:&lt;/b&gt; Create class.
+ * &lt;/ul&gt;
+ * &lt;/p&gt;
+ * 
+ * @author A02-Group-A
+ * @since 0.1.0
+ * @version 0.1.0
+ */
+public class Complex {
+	/**
+	 * &lt;p&gt;
+	 * &lt;b&gt;Attribute:&lt;/b&gt;&lt;/br&gt;
+	 * real.
+	 * &lt;/p&gt;
+	 * &lt;p&gt;
+	 * &lt;b&gt;Description:&lt;/b&gt;&lt;/br&gt;
+	 * Real part of a complex number.
+	 * &lt;/p&gt;
+	 */
+	private double real;
+	/**
+	 * &lt;p&gt;
+	 * &lt;b&gt;Attribute:&lt;/b&gt;&lt;/br&gt;
+	 * imaginary.
+	 * &lt;/p&gt;
+	 * &lt;p&gt;
+	 * &lt;b&gt;Description:&lt;/b&gt;&lt;/br&gt;
+	 * Imaginary part of a complex number.
+	 * &lt;/p&gt;
+	 */
+	private double imaginary;
+
+	/**
+	 * &lt;p&gt;
+	 * &lt;b&gt;Method:&lt;/b&gt;&lt;/br&gt;
+	 * Complex.
+	 * &lt;/p&gt;
+	 * 
+	 * &lt;p&gt;
+	 * &lt;b&gt;Description:&lt;/b&gt;&lt;/br&gt;
+	 * Constructs a complex number with the specified real and imaginary parts.
+	 * 
+	 * @param real      The real part of the complex number.
+	 * @param imaginary The imaginary part of the complex number.
+	 */
+<span class="fc" id="L64">	public Complex(double real, double imaginary) {</span>
+<span class="fc" id="L65">		setReal(real);</span>
+<span class="fc" id="L66">		setImaginary(imaginary);</span>
+<span class="fc" id="L67">	}</span>
+
+	/**
+	 * &lt;p&gt;
+	 * &lt;b&gt;Method:&lt;/b&gt;&lt;/br&gt;
+	 * getReal.
+	 * &lt;/p&gt;
+	 * 
+	 * &lt;p&gt;
+	 * &lt;b&gt;Description:&lt;/b&gt;&lt;/br&gt;
+	 * Gets the real part of the complex number.
+	 * 
+	 * @return The real part of the complex number.
+	 */
+	public double getReal() {
+<span class="fc" id="L82">		return real;</span>
+	}
+
+	/**
+	 * &lt;p&gt;
+	 * &lt;b&gt;Method:&lt;/b&gt;&lt;/br&gt;
+	 * setReal.
+	 * &lt;/p&gt;
+	 * 
+	 * &lt;p&gt;
+	 * &lt;b&gt;Description:&lt;/b&gt;&lt;/br&gt;
+	 * Sets the real part of the complex number.
+	 * 
+	 * @param real The new real part of the complex number.
+	 */
+	public void setReal(double real) {
+<span class="fc" id="L98">		this.real = real;</span>
+<span class="fc" id="L99">	}</span>
+
+	/**
+	 * &lt;p&gt;
+	 * &lt;b&gt;Method:&lt;/b&gt;&lt;/br&gt;
+	 * getImaginary.
+	 * &lt;/p&gt;
+	 * 
+	 * &lt;p&gt;
+	 * &lt;b&gt;Description:&lt;/b&gt;&lt;/br&gt;
+	 * Gets the imaginary part of the complex number.
+	 * 
+	 * @return The imaginary part of the complex number.
+	 */
+	public double getImaginary() {
+<span class="fc" id="L114">		return imaginary;</span>
+	}
+
+	/**
+	 * &lt;p&gt;
+	 * &lt;b&gt;Method:&lt;/b&gt;&lt;/br&gt;
+	 * setImaginary.
+	 * &lt;/p&gt;
+	 * 
+	 * &lt;p&gt;
+	 * &lt;b&gt;Description:&lt;/b&gt;&lt;/br&gt;
+	 * Sets the imaginary part of the complex number.
+	 * 
+	 * @param imaginary imaginary The new imaginary part of the complex number.
+	 */
+	public void setImaginary(double imaginary) {
+<span class="fc" id="L130">		this.imaginary = imaginary;</span>
+<span class="fc" id="L131">	}</span>
+
+	/**
+	 * &lt;p&gt;
+	 * &lt;b&gt;Method:&lt;/b&gt;&lt;/br&gt;
+	 * toString.
+	 * &lt;/p&gt;
+	 * 
+	 * &lt;p&gt;
+	 * &lt;b&gt;Description:&lt;/b&gt;&lt;/br&gt;
+	 * Returns a string representation of the complex number.
+	 * 
+	 * @return A string representation of the complex number.
+	 */
+	@Override
+	public String toString() {
+<span class="fc" id="L147">		String complx = &quot;&quot;;</span>
+<span class="fc bfc" id="L148" title="All 2 branches covered.">		if (imaginary &gt; 0) {</span>
+<span class="fc" id="L149">			complx = String.format(&quot;%.4f+%.4fi&quot;, real, imaginary);</span>
+<span class="fc bfc" id="L150" title="All 2 branches covered.">		} else if (imaginary == 0) {</span>
+<span class="fc" id="L151">			complx = String.format(&quot;%.4f&quot;, real);</span>
+		} else {
+<span class="fc" id="L153">			complx = String.format(&quot;%.4f%.4fi&quot;, real, imaginary);</span>
+		}
+<span class="fc" id="L155">		return complx;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
