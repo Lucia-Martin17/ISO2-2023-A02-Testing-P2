@@ -19,4 +19,5 @@ outputs in domain logic classes).
 
 * Note for the testers:
 
-In the `docs` folder I generated a `javadoc` for the Quadratic Equation just to fill the [repository website](https://lucia-martin17.github.io/ISO2-2023-A02-Testing-P2), so when you generate the report's `.html` files please, overwrite the `docs` folder with that, it should generate an `index.html` file.
+>- [repository website](https://lucia-martin17.github.io/ISO2-2023-A02-Testing-P2)
+>- To generate the reports, use `site:site`and in `docs` copy and paste the files of the site project located in `target>site` and same with every module in their corresponding folders.
