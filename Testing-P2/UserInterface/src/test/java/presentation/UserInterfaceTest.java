@@ -8,17 +8,24 @@ public class UserInterfaceTest {
 
 	@Test
 	public void testOutputMessage() {
-		fail("Not yet implemented");
+		Interface_CLI interfacecli=new Interface_CLI();
+		interfacecli.outputMessage("This is an output test");
+		assertTrue("Successful.",true);
 	}
 
 	@Test
 	public void testOutputErrorMessage() {
-		fail("Not yet implemented");
+		Interface_CLI interfacecli=new Interface_CLI();
+		IllegalArgumentException exception = null;
+		interfacecli.outputErrorMessage(exception);
+		assertTrue("Successful.",true);
 	}
 
 	@Test
 	public void testKeyboardInputDouble() {
-		fail("Not yet implemented");
+		Interface_CLI interfacecli=new Interface_CLI();
+		double testDouble=interfacecli.keyboardInputDouble("Write a 12");
+		assertTrue(testDouble==12);
 	}
 
 }

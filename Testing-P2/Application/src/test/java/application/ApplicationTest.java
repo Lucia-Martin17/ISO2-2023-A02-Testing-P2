@@ -8,7 +8,7 @@ public class ApplicationTest {
 
 	@Test
 	public void testMain() {
-		fail("Not yet implemented");
+		String[] args=null;
+		App.main(args);
 	}
-
 }
