@@ -1,4 +1,8 @@
 # ISO2-2023-A02-Testing-P2
+## TEAMS DISTRIBUTION
+* Developers: Lucía Martín Serrano & Elena Ballesteros Morallón
+* Testing designers: Helena Neves García & Aymina Yılık
+* JUnit testing: Miguel Ángel Ruiz Arreaza, Manuel Perales Briones & Dilan Kubay
 
 ## ET.02.03 Second Problem
 Write and test the necessary methods to calculate the roots of the quadratic equation. In 
