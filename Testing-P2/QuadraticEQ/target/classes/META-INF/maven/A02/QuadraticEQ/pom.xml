@@ -1,0 +1,14 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>A02</groupId>
+		<artifactId>Testing-P2</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>QuadraticEQ</artifactId>
+	<name>QuadraticEq</name>
+	<description>ISO2-2023-A02-Testing-P2: Write and test the necessary methods
+		to calculate the roots of the quadratic equation.</description>
+</project>
