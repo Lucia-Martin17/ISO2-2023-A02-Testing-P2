@@ -6,54 +6,41 @@ import org.junit.Test;
 
 public class QuadraticEquationTestDC {
 
-	@Test
-	public void testQuadraticEquationDC() {
-		fail("Not yet implemented");
+	// A == 0
+	@Test(expected = IllegalArgumentException.class)
+	public void TestCase1() {
+		QuadraticEquation Qe = new QuadraticEquation(0,2,4);
+		Qe.calculate();
+		
+		assertTrue((Qe.sol1 != null) || (Qe.sol2 !=null));
 	}
-
+	
+	// Delta > 0
 	@Test
-	public void testGetCoefficientA() {
-		fail("Not yet implemented");
+	public void TestCase2() {
+		QuadraticEquation Qe = new QuadraticEquation(1,2,4);
+		Qe.calculate();
+		
+		assertTrue((Qe.sol1 != null) || (Qe.sol2 !=null));
 	}
-
+	
+	// Delta == 0
 	@Test
-	public void testSetCoefficientA() {
-		fail("Not yet implemented");
+	public void TestCase3() {
+		QuadraticEquation Qe = new QuadraticEquation(1,0,0);
+		Qe.calculate();
+		
+		assertTrue((Qe.sol1 != null) || (Qe.sol2 !=null));
 	}
-
+	
+	// Delta < 0
 	@Test
-	public void testGetCoefficientB() {
-		fail("Not yet implemented");
+	public void TestCase3() {
+		QuadraticEquation Qe = new QuadraticEquation(1,2,8);
+		Qe.calculate();
+		
+		assertTrue((Qe.sol1 != null) || (Qe.sol2 !=null));
 	}
-
-	@Test
-	public void testSetCoefficientB() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetCoefficientC() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetCoefficientC() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetSol1() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetSol2() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testCalculate() {
-		fail("Not yet implemented");
-	}
+	
 
 }
