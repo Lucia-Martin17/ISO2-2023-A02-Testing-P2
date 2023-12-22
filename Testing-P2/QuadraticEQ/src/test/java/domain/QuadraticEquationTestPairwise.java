@@ -7,7 +7,7 @@ import org.junit.Test;
 public class QuadraticEquationTest {
 
 	@Test
-	public void testQuadraticEquation() {
+	public void testQuadraticEquationPairwise() {
 		fail("Not yet implemented");
 	}
 
