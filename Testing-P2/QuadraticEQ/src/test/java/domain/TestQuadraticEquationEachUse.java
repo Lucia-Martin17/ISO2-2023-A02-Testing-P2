@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class QuadraticEquationTestEachUse {
+public class TestQuadraticEquationEachUse {
 	
 	@Test
 	public void testCaseOne() throws IllegalArgumentException{

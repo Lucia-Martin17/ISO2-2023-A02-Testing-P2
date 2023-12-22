@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class QuadraticEquationTestDC {
+public class TestQuadraticEquationDC {
 
 	// A == 0
 	@Test(expected = IllegalArgumentException.class)
@@ -35,7 +35,7 @@ public class QuadraticEquationTestDC {
 	
 	// Delta < 0
 	@Test
-	public void TestCase3() {
+	public void TestCase4() {
 		QuadraticEquation Qe = new QuadraticEquation(1,2,8);
 		Qe.calculate();
 		

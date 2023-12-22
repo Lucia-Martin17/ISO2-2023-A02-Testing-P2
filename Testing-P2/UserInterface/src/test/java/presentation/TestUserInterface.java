@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class UserInterfaceTest {
+public class TestUserInterface {
 
 	@Test
 	public void testOutputMessage() {
