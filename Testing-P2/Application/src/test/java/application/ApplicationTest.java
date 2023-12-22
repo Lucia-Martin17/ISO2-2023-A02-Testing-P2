@@ -7,7 +7,7 @@ import org.junit.Test;
 public class ApplicationTest {
 
 	@Test
-	public void test() {
+	public void testMain() {
 		fail("Not yet implemented");
 	}
 
